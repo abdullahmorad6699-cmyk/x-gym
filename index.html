@@ -6,7 +6,7 @@
 <title>X GYM | مصنع الأبطال – قاعة القاضي على البحر</title>
 <meta name="description" content="X GYM – أجهزة جديدة بالكامل، كوتشات على أعلى مستوى، نظام متكامل للمبتدئين. شغالين طول اليوم. قاعة القاضي على البحر اتجاه مسطرد.">
 <meta property="og:title" content="X GYM | مصنع الأبطال">
-<meta property="og:description" content="أجهزة جديدة بالكامل • كوتشات على أعلى مستوى • 3 شهور بـ 999 جنيه">
+<meta property="og:description" content="أجهزة جديدة بالكامل • كوتشات على أعلى مستوى • 3 شهور بـ 1000 جنيه بدل 1500">
 <meta property="og:image" content="img/sign.jpg">
 <meta name="theme-color" content="#0b0b0b">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -88,11 +88,13 @@ section{padding:90px 0}
 .vid{display:flex;justify-content:center}
 .vid video{width:min(380px,100%);border-radius:22px;border:1px solid var(--line);box-shadow:0 20px 60px rgba(0,0,0,.6)}
 /* pricing */
-.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;align-items:stretch}
+.prices{display:grid;grid-template-columns:repeat(5,1fr);gap:1rem;align-items:stretch}
+.p .old{color:#777;text-decoration:line-through;font-weight:700;margin-top:.4rem}
+@media(max-width:1100px){.prices{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:860px){.prices{grid-template-columns:1fr;max-width:420px;margin-inline:auto}}
 .p{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:2rem 1.6rem;text-align:center;position:relative;display:flex;flex-direction:column}
 .p h4{font-size:1.3rem;font-weight:800}
-.p .amt{font-size:3.4rem;font-weight:900;line-height:1.2;margin:.6rem 0}
+.p .amt{white-space:nowrap;font-size:clamp(2.1rem,2.6vw,2.8rem);font-weight:900;line-height:1.2;margin:.6rem 0}
 .p .amt small{font-size:1.1rem;color:var(--mut);font-weight:600}
 .p ul{list-style:none;color:var(--mut);margin:1rem 0 1.6rem;display:grid;gap:.4rem;font-size:.95rem}
 .p ul li::before{content:"✓ ";color:var(--gold);font-weight:900}
@@ -161,7 +163,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0;color:var(--mut);font-siz
     <div><b>100%</b><span>أجهزة جديدة</span></div>
     <div><b>طول اليوم</b><span>من 12 الظهر لـ 9 الصبح</span></div>
     <div><b>يومي</b><span>تنضيف وتجهيز</span></div>
-    <div><b>999 ج</b><span>اشتراك 3 شهور</span></div>
+    <div><b>1000 ج</b><span>3 شهور بدل 1500</span></div>
   </div>
 </div>
 
@@ -216,9 +218,11 @@ footer{border-top:1px solid var(--line);padding:2rem 0;color:var(--mut);font-siz
 <section id="prices" style="padding-top:20px"><div class="wrap">
   <div class="head reveal"><small>الأسعار</small><h3>اختار الباقة <span class="gold">اللي تناسبك</span></h3><p>كل الباقات تشمل استخدام كل الأجهزة والمتابعة مع الكوتشات.</p></div>
   <div class="prices">
-    <div class="p reveal"><h4>شهر</h4><div class="amt">399<small> جنيه</small></div><ul><li>كل الأجهزة</li><li>متابعة الكوتش</li><li>طول اليوم</li></ul><a href="#location" class="btn btn-ghost">اشترك</a></div>
-    <div class="p best reveal"><span class="badge">العرض الأقوى</span><h4>3 شهور</h4><div class="amt gold">999<small> جنيه</small></div><span class="save">وفر 198 جنيه</span><ul><li>كل الأجهزة</li><li>نظام متكامل ومتابعة مستمرة</li><li>طول اليوم</li></ul><a href="#location" class="btn btn-gold">اشترك دلوقتي</a></div>
-    <div class="p reveal"><h4>شهرين</h4><div class="amt">699<small> جنيه</small></div><span class="save">وفر 99 جنيه</span><ul><li>كل الأجهزة</li><li>متابعة الكوتش</li><li>طول اليوم</li></ul><a href="#location" class="btn btn-ghost">اشترك</a></div>
+    <div class="p reveal"><h4>شهر</h4><div class="old">500 جنيه</div><div class="amt">400<small> جنيه</small></div><span class="save">وفر 100 جنيه</span><ul><li>كل الأجهزة</li><li>متابعة الكوتش</li><li>طول اليوم</li></ul><a href="#location" class="btn btn-ghost">اشترك</a></div>
+    <div class="p reveal"><h4>شهرين</h4><div class="old">1000 جنيه</div><div class="amt">700<small> جنيه</small></div><span class="save">وفر 300 جنيه</span><ul><li>كل الأجهزة</li><li>متابعة الكوتش</li><li>طول اليوم</li></ul><a href="#location" class="btn btn-ghost">اشترك</a></div>
+    <div class="p best reveal"><span class="badge">العرض الأقوى</span><h4>3 شهور</h4><div class="old">1500 جنيه</div><div class="amt gold">1000<small> جنيه</small></div><span class="save">وفر 500 جنيه</span><ul><li>كل الأجهزة</li><li>نظام متكامل ومتابعة مستمرة</li><li>طول اليوم</li></ul><a href="#location" class="btn btn-gold">اشترك</a></div>
+    <div class="p reveal"><h4>6 شهور</h4><div class="old">3000 جنيه</div><div class="amt">2500<small> جنيه</small></div><span class="save">وفر 500 جنيه</span><ul><li>كل الأجهزة</li><li>متابعة الكوتش</li><li>طول اليوم</li></ul><a href="#location" class="btn btn-ghost">اشترك</a></div>
+    <div class="p reveal"><span class="badge">أكبر توفير</span><h4>سنة</h4><div class="old">6000 جنيه</div><div class="amt">4000<small> جنيه</small></div><span class="save">وفر 2000 جنيه</span><ul><li>كل الأجهزة</li><li>نظام متكامل ومتابعة مستمرة</li><li>طول اليوم</li></ul><a href="#location" class="btn btn-ghost">اشترك</a></div>
   </div>
 </div></section>
 
@@ -251,7 +255,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0;color:var(--mut);font-siz
     <details class="reveal"><summary>أنا مبتدئ خالص، ينفع أشترك؟</summary><p>طبعًا. عندنا نظام متكامل للمبتدئين، والكوتش هيمشي معاك خطوة بخطوة ويعلمك تستخدم الأجهزة صح.</p></details>
     <details class="reveal"><summary>المواعيد إيه بالظبط؟</summary><p>الجيم شغال من 12 الظهر لحد 9 الصبح كل يوم. من 9 لـ 12 الظهر بنقفل للتنضيف وتجهيز المكان.</p></details>
     <details class="reveal"><summary>أشترك إزاي؟</summary><p>تعالى الجيم في أي وقت من المواعيد واشترك من الريسبشن، أو ابعتلنا رسالة على صفحتنا.</p></details>
-    <details class="reveal"><summary>أنهي باقة أوفر؟</summary><p>باقة الـ 3 شهور بـ 999 جنيه، بدل 1197 لو دفعت كل شهر لوحده، يعني بتوفر 198 جنيه.</p></details>
+    <details class="reveal"><summary>أنهي باقة أوفر؟</summary><p>باقة الـ 3 شهور بـ 1000 جنيه بدل 1500، وباقة السنة بـ 4000 جنيه بدل 6000، يعني بتوفر 2000 جنيه.</p></details>
     <details class="reveal"><summary>فيه لوكرز أحط فيها حاجتي؟</summary><p>أيوه، فيه منطقة لوكرز وأحواض علشان تتمرن وإنت مرتاح.</p></details>
   </div>
 </div></section>
@@ -259,7 +263,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0;color:var(--mut);font-siz
 <section style="padding-top:20px"><div class="wrap">
   <div class="final reveal">
     <h3>متأجلش تاني… <span class="gold">ابدأ النهارده</span></h3>
-    <p>3 شهور بـ 999 جنيه بس، في جيم جديد بالكامل.</p>
+    <p>3 شهور بـ 1000 جنيه بس بدل 1500، وأجهزة جديدة بالكامل.</p>
     <div style="display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap">
       <a href="#location" class="btn btn-gold">اعرف المكان واشترك</a>
       <a href="https://www.facebook.com/share/1E4r64QSAc/" target="_blank" rel="noopener" class="btn btn-ghost">ابعتلنا رسالة على فيسبوك</a>
@@ -272,7 +276,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0;color:var(--mut);font-siz
   مصنع الأبطال • قاعة القاضي، على البحر – اتجاه مسطرد<br>© <span id="yr"></span> X GYM
 </div></footer>
 
-<a href="#prices" class="btn btn-gold float">اشترك بـ 999</a>
+<a href="#prices" class="btn btn-gold float">3 شهور بـ 1000</a>
 <div class="lb" id="lb"><img alt=""></div>
 
 <script>
