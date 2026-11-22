@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>X GYM | مصنع الأبطال – قاعة القاضي، مسطرد</title>
+<meta name="description" content="X GYM – أجهزة جديدة بالكامل، كوتشات على أعلى مستوى، نظام متكامل للمبتدئين. شغالين طول اليوم. قاعة القاضي على البحر اتجاه مسطرد.">
+<meta property="og:title" content="X GYM | مصنع الأبطال">
+<meta property="og:description" content="أجهزة جديدة بالكامل • كوتشات على أعلى مستوى • 3 شهور بـ 999 جنيه">
+<meta property="og:image" content="img/sign.jpg">
+<meta name="theme-color" content="#0b0b0b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0b0b;--card:#151515;--line:#262626;--gold:#f5b83d;--gold2:#ffd77a;--red:#e2231a;--txt:#f3f3f3;--mut:#a7a7a7}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Cairo',system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.7;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{width:min(1120px,92%);margin-inline:auto}
+.gold{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.85rem 1.6rem;border-radius:999px;font-weight:700;font-size:1rem;transition:.25s;cursor:pointer;border:0}
+.btn-gold{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#111;box-shadow:0 8px 30px rgba(245,184,61,.25)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(245,184,61,.4)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.35);color:#fff}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+/* nav */
+nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:.3s}
+nav.scrolled{background:rgba(11,11,11,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:70px}
+.brand{font-weight:900;font-size:1.6rem;letter-spacing:1px;direction:ltr}
+.brand b{color:var(--gold);font-size:1.9rem}
+.links{display:flex;gap:1.6rem;font-weight:600;font-size:.95rem}
+.links a:hover{color:var(--gold)}
+@media(max-width:820px){.links{display:none}}
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:brightness(.45)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,11,.3) 0%,rgba(11,11,11,.2) 50%,var(--bg) 100%)}
+.hero-c{position:relative;z-index:2;padding-top:70px}
+.tag{display:inline-block;background:rgba(226,35,26,.15);border:1px solid rgba(226,35,26,.5);color:#ff6b63;padding:.3rem 1rem;border-radius:999px;font-weight:700;font-size:.9rem;margin-bottom:1rem}
+.hero h1{font-size:clamp(3rem,10vw,6.5rem);font-weight:900;line-height:1;direction:ltr;text-align:right}
+.hero h1 span{color:var(--gold)}
+.hero h2{font-size:clamp(1.8rem,5vw,3rem);font-weight:900;margin:.4rem 0 1rem}
+.hero p{color:#ddd;font-size:1.15rem;max-width:560px;margin-bottom:1.8rem}
+.hero .cta{display:flex;gap:.8rem;flex-wrap:wrap}
+/* strip */
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:-40px;position:relative;z-index:3}
+.strip div{background:var(--card);padding:1.3rem 1rem;text-align:center}
+.strip b{display:block;font-size:1.25rem;color:var(--gold);font-weight:900}
+.strip span{color:var(--mut);font-size:.9rem}
+@media(max-width:700px){.strip{grid-template-columns:repeat(2,1fr)}}
+section{padding:90px 0}
+.head{text-align:center;margin-bottom:3rem}
+.head small{color:var(--red);font-weight:700;letter-spacing:1px}
+.head h3{font-size:clamp(1.9rem,4.5vw,2.8rem);font-weight:900;line-height:1.3}
+.head p{color:var(--mut);max-width:620px;margin:.6rem auto 0}
+/* features */
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+@media(max-width:900px){.feat{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.feat{grid-template-columns:1fr}}
+.f{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1.6rem;transition:.3s}
+.f:hover{border-color:rgba(245,184,61,.5);transform:translateY(-4px)}
+.ico{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:rgba(245,184,61,.12);margin-bottom:1rem}
+.ico svg{width:28px;height:28px;stroke:var(--gold);fill:none;stroke-width:2}
+.f h4{font-size:1.2rem;font-weight:800;margin-bottom:.3rem}
+.f p{color:var(--mut);font-size:.95rem}
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+@media(max-width:860px){.split{grid-template-columns:1fr}}
+.split img{border-radius:22px;aspect-ratio:4/5;object-fit:cover;width:100%;border:1px solid var(--line)}
+.steps{list-style:none;margin-top:1.5rem;display:grid;gap:1rem}
+.steps li{display:flex;gap:1rem;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1rem 1.2rem}
+.steps i{font-style:normal;flex:none;width:36px;height:36px;border-radius:50%;background:var(--gold);color:#111;font-weight:900;display:grid;place-items:center}
+.steps b{display:block}
+.steps span{color:var(--mut);font-size:.92rem}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem}
+.gal img{width:100%;aspect-ratio:9/14;object-fit:cover;border-radius:14px;cursor:zoom-in;transition:.35s;filter:saturate(1.05)}
+.gal img:hover{transform:scale(1.03);filter:saturate(1.2) brightness(1.08)}
+@media(max-width:820px){.gal{grid-template-columns:repeat(2,1fr)}}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.92);display:none;align-items:center;justify-content:center;z-index:100;padding:20px}
+.lb.on{display:flex}
+.lb img{max-height:92vh;border-radius:14px}
+/* video */
+.vid{display:flex;justify-content:center}
+.vid video{width:min(380px,100%);border-radius:22px;border:1px solid var(--line);box-shadow:0 20px 60px rgba(0,0,0,.6)}
+/* pricing */
+.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;align-items:stretch}
+@media(max-width:860px){.prices{grid-template-columns:1fr;max-width:420px;margin-inline:auto}}
+.p{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:2rem 1.6rem;text-align:center;position:relative;display:flex;flex-direction:column}
+.p h4{font-size:1.3rem;font-weight:800}
+.p .amt{font-size:3.4rem;font-weight:900;line-height:1.2;margin:.6rem 0}
+.p .amt small{font-size:1.1rem;color:var(--mut);font-weight:600}
+.p ul{list-style:none;color:var(--mut);margin:1rem 0 1.6rem;display:grid;gap:.4rem;font-size:.95rem}
+.p ul li::before{content:"✓ ";color:var(--gold);font-weight:900}
+.p .btn{margin-top:auto;justify-content:center}
+.p.best{border:2px solid var(--gold);background:linear-gradient(180deg,#1c1709,#151515 55%);transform:scale(1.04)}
+@media(max-width:860px){.p.best{transform:none}}
+.badge{position:absolute;top:-14px;right:50%;transform:translateX(50%);background:var(--red);color:#fff;font-weight:800;font-size:.85rem;padding:.25rem 1rem;border-radius:999px;white-space:nowrap}
+.save{display:inline-block;background:rgba(245,184,61,.15);color:var(--gold);font-weight:800;border-radius:999px;padding:.2rem .9rem;font-size:.9rem}
+/* hours */
+.hours{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+@media(max-width:700px){.hours{grid-template-columns:1fr}}
+.h{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:2rem;display:flex;gap:1.2rem;align-items:center}
+.h .ico{margin:0;flex:none;width:64px;height:64px}
+.h b{font-size:1.5rem;font-weight:900;display:block}
+.h span{color:var(--mut)}
+/* location */
+.loc{display:grid;grid-template-columns:1fr 1.3fr;gap:1.5rem;align-items:stretch}
+@media(max-width:860px){.loc{grid-template-columns:1fr}}
+.loc .card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:2rem;display:flex;flex-direction:column;gap:1rem;justify-content:center}
+.loc iframe{width:100%;min-height:340px;border:0;border-radius:22px;filter:grayscale(.3) contrast(1.05)}
+/* faq */
+.faq{max-width:760px;margin-inline:auto;display:grid;gap:.8rem}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.3rem}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between}
+summary::after{content:"+";color:var(--gold);font-size:1.4rem;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--mut);margin-top:.6rem}
+/* final cta */
+.final{background:linear-gradient(135deg,rgba(245,184,61,.14),rgba(226,35,26,.12));border:1px solid var(--line);border-radius:28px;padding:3rem 2rem;text-align:center}
+.final h3{font-size:clamp(1.8rem,4.5vw,2.6rem);font-weight:900}
+.final p{color:#ccc;margin:.5rem 0 1.5rem}
+footer{border-top:1px solid var(--line);padding:2rem 0;color:var(--mut);font-size:.9rem;text-align:center}
+.float{position:fixed;bottom:18px;left:18px;z-index:60;display:none}
+@media(max-width:820px){.float{display:inline-flex}}
+.reveal{opacity:0;transform:translateY(30px);transition:.8s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.hide{display:none!important}
+</style>
+</head>
+<body>
+
+<nav id="nav"><div class="wrap nav-in">
+  <a href="#" class="brand"><b>X</b> GYM</a>
+  <div class="links">
+    <a href="#why">ليه X GYM</a><a href="#beginners">المبتدئين</a><a href="#gallery">الصور</a>
+    <a href="#prices">الأسعار</a><a href="#hours">المواعيد</a><a href="#location">المكان</a>
+  </div>
+  <a href="#prices" class="btn btn-gold" style="padding:.6rem 1.2rem">اشترك دلوقتي</a>
+</div></nav>
+
+<header class="hero">
+  <video autoplay muted loop playsinline poster="img/sign.jpg"><source src="img/hero.mp4" type="video/mp4"></video>
+  <div class="wrap hero-c">
+    <span class="tag">جيم جديد في مسطرد</span>
+    <h1><span>X</span> GYM</h1>
+    <h2>مصنع <span class="gold">الأبطال</span></h2>
+    <p>أجهزة جديدة بالكامل، وكوتشات على أعلى مستوى، ونظام متكامل للمبتدئين. شغالين طول اليوم عشان تتمرن في الوقت اللي يناسبك.</p>
+    <div class="cta">
+      <a href="#prices" class="btn btn-gold">شوف الأسعار</a>
+      <a href="#location" class="btn btn-ghost">إزاي توصلنا</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="strip reveal">
+    <div><b>100%</b><span>أجهزة جديدة</span></div>
+    <div><b>طول اليوم</b><span>من 12 الظهر لـ 9 الصبح</span></div>
+    <div><b>يومي</b><span>تنضيف وتجهيز</span></div>
+    <div><b>999 ج</b><span>اشتراك 3 شهور</span></div>
+  </div>
+</div>
+
+<section id="why"><div class="wrap">
+  <div class="head reveal"><small>ليه X GYM؟</small><h3>كل اللي محتاجه عشان <span class="gold">تبدأ وتكمّل</span></h3><p>مكان متجهز صح، وناس هتساعدك توصل لهدفك.</p></div>
+  <div class="feat">
+    <div class="f reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M6 6v12M18 6v12M3 9v6M21 9v6M6 12h12"/></svg></div><h4>أجهزة جديدة بالكامل</h4><p>أجهزة حديد وكارديو جديدة، تغطي كل عضلات الجسم من غير ما تستنى دورك كتير.</p></div>
+    <div class="f reveal"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="7" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg></div><h4>كوتشات على أعلى مستوى</h4><p>كوتشات موجودين معاك في الصالة يصححولك الأداء ويوجهوك صح.</p></div>
+    <div class="f reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 19l5-6 4 3 7-9"/><path d="M15 7h5v5"/></svg></div><h4>نظام متكامل للمبتدئين</h4><p>لو أول مرة تدخل جيم، هنمشي معاك خطوة بخطوة لحد ما تتعود.</p></div>
+    <div class="f reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M9 11l3 3 8-8"/><path d="M20 12v7a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2h9"/></svg></div><h4>متابعة مستمرة</h4><p>متابعة لتقدمك لحد ما توصل لهدفك، مش اشتراك وخلاص.</p></div>
+    <div class="f reveal"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h4>شغالين طول اليوم</h4><p>من 12 الظهر لحد 9 الصبح، يعني تقدر تتمرن بالليل أو حتى الفجر.</p></div>
+    <div class="f reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.6 7.1 18.2l.9-5.5-4-3.9 5.5-.8z"/></svg></div><h4>نظافة يومية</h4><p>3 ساعات كل يوم (من 9 لـ 12 الظهر) مخصصين للتنضيف وتجهيز المكان ليك.</p></div>
+  </div>
+</div></section>
+
+<section id="beginners" style="padding-top:20px"><div class="wrap split">
+  <div class="reveal">
+    <div class="head" style="text-align:right;margin-bottom:0"><small>للمبتدئين</small><h3>أول مرة تدخل جيم؟ <span class="gold">إحنا معاك</span></h3></div>
+    <ul class="steps">
+      <li><i>1</i><div><b>تعالى زورنا</b><span>اتعرف على المكان والأجهزة والكوتشات.</span></div></li>
+      <li><i>2</i><div><b>نحدد هدفك</b><span>تخسيس، أو تضخيم، أو لياقة عامة. هنبدأ من المكان اللي إنت فيه.</span></div></li>
+      <li><i>3</i><div><b>نظام تمرين واضح</b><span>هتعرف تمرن إيه كل يوم وإزاي تستخدم كل جهاز صح.</span></div></li>
+      <li><i>4</i><div><b>متابعة لحد ما توصل</b><span>بنتابع تقدمك ونعدّل معاك على طول الطريق.</span></div></li>
+    </ul>
+  </div>
+  <img class="reveal" src="img/mindset.jpg" alt="X GYM – Build your mindset" loading="lazy">
+</div></section>
+
+<section id="gallery" style="padding-top:20px"><div class="wrap">
+  <div class="head reveal"><small>جوه X GYM</small><h3>شوف المكان <span class="gold">بنفسك</span></h3></div>
+  <div class="gal">
+    <img src="img/entrance.jpg" alt="مدخل X GYM" loading="lazy">
+    <img src="img/reception.jpg" alt="الريسبشن" loading="lazy">
+    <img src="img/hall.jpg" alt="الصالة" loading="lazy">
+    <img src="img/cardio.jpg" alt="أجهزة الكارديو" loading="lazy">
+    <img src="img/dumbbells.jpg" alt="الدامبلز" loading="lazy">
+    <img src="img/cable.jpg" alt="الكيبل كروس" loading="lazy">
+    <img src="img/plates.jpg" alt="منطقة الأوزان الحرة" loading="lazy">
+    <img src="img/smith.jpg" alt="سميث ماشين" loading="lazy">
+    <img src="img/chest.jpg" alt="جهاز صدر" loading="lazy">
+    <img src="img/press.jpg" alt="جهاز بريس" loading="lazy">
+    <img src="img/stairs.jpg" alt="السلم" loading="lazy">
+    <img src="img/lockers.jpg" alt="اللوكرز" loading="lazy">
+  </div>
+</div></section>
+
+<section style="padding-top:20px"><div class="wrap">
+  <div class="head reveal"><small>فيديو</small><h3>X GYM في <span class="gold">30 ثانية</span></h3></div>
+  <div class="vid reveal"><video controls playsinline preload="none" poster="img/sign.jpg"><source src="img/promo.mp4" type="video/mp4"></video></div>
+</div></section>
+
+<section id="prices" style="padding-top:20px"><div class="wrap">
+  <div class="head reveal"><small>الأسعار</small><h3>اختار الباقة <span class="gold">اللي تناسبك</span></h3><p>كل الباقات تشمل استخدام كل الأجهزة والمتابعة مع الكوتشات.</p></div>
+  <div class="prices">
+    <div class="p reveal"><h4>شهر</h4><div class="amt">399<small> جنيه</small></div><ul><li>كل الأجهزة</li><li>متابعة الكوتش</li><li>طول اليوم</li></ul><a href="#location" class="btn btn-ghost">اشترك</a></div>
+    <div class="p best reveal"><span class="badge">العرض الأقوى</span><h4>3 شهور</h4><div class="amt gold">999<small> جنيه</small></div><span class="save">وفر 198 جنيه</span><ul><li>كل الأجهزة</li><li>نظام متكامل ومتابعة مستمرة</li><li>طول اليوم</li></ul><a href="#location" class="btn btn-gold">اشترك دلوقتي</a></div>
+    <div class="p reveal"><h4>شهرين</h4><div class="amt">699<small> جنيه</small></div><span class="save">وفر 99 جنيه</span><ul><li>كل الأجهزة</li><li>متابعة الكوتش</li><li>طول اليوم</li></ul><a href="#location" class="btn btn-ghost">اشترك</a></div>
+  </div>
+</div></section>
+
+<section id="hours" style="padding-top:20px"><div class="wrap">
+  <div class="head reveal"><small>المواعيد</small><h3>شغالين <span class="gold">طول اليوم</span></h3><p>ما عدا 3 ساعات بس كل يوم لتهيئة الجيم ليك باقي اليوم.</p></div>
+  <div class="hours">
+    <div class="h reveal"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><div><b>12 الظهر ← 9 الصبح</b><span>مفتوح للتمرين كل يوم</span></div></div>
+    <div class="h reveal"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.6 7.1 18.2l.9-5.5-4-3.9 5.5-.8z"/></svg></div><div><b>9 الصبح ← 12 الظهر</b><span>تنضيف وتجهيز يومي للمكان</span></div></div>
+  </div>
+</div></section>
+
+<section id="location" style="padding-top:20px"><div class="wrap">
+  <div class="head reveal"><small>المكان</small><h3>منتظرينك في <span class="gold">قاعة القاضي</span></h3></div>
+  <div class="loc">
+    <div class="card reveal">
+      <h4 style="font-size:1.4rem;font-weight:900">X GYM – مصنع الأبطال</h4>
+      <p style="color:var(--mut)">قاعة القاضي، على البحر – اتجاه مسطرد</p>
+      <a id="mapBtn" class="btn btn-gold" target="_blank" rel="noopener">افتح الموقع على الخريطة</a>
+      <a id="msgBtn" class="btn btn-ghost hide" target="_blank" rel="noopener">ابعتلنا رسالة</a>
+      <a id="callBtn" class="btn btn-ghost hide">اتصل بينا</a>
+      <a id="fbBtn" class="btn btn-ghost hide" target="_blank" rel="noopener">صفحتنا على فيسبوك</a>
+    </div>
+    <a id="mapImg" class="reveal" target="_blank" rel="noopener" style="position:relative;display:block;border-radius:22px;overflow:hidden;border:1px solid var(--line);min-height:340px"><img src="img/entrance.jpg" alt="مدخل X GYM" loading="lazy" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;filter:brightness(.6)"><span style="position:absolute;inset:auto 0 0 0;padding:1.4rem;background:linear-gradient(0deg,rgba(0,0,0,.85),transparent);font-weight:800;font-size:1.1rem">📍 دوس هنا وافتح الموقع على جوجل ماب</span></a>
+  </div>
+</div></section>
+
+<section style="padding-top:20px"><div class="wrap">
+  <div class="head reveal"><small>أسئلة</small><h3>أسئلة <span class="gold">بتتكرر</span></h3></div>
+  <div class="faq">
+    <details class="reveal"><summary>أنا مبتدئ خالص، ينفع أشترك؟</summary><p>طبعًا. عندنا نظام متكامل للمبتدئين، والكوتش هيمشي معاك خطوة بخطوة ويعلمك تستخدم الأجهزة صح.</p></details>
+    <details class="reveal"><summary>المواعيد إيه بالظبط؟</summary><p>الجيم شغال من 12 الظهر لحد 9 الصبح كل يوم. من 9 لـ 12 الظهر بنقفل للتنضيف وتجهيز المكان.</p></details>
+    <details class="reveal"><summary>أشترك إزاي؟</summary><p>تعالى الجيم في أي وقت من المواعيد واشترك من الريسبشن، أو ابعتلنا رسالة على صفحتنا.</p></details>
+    <details class="reveal"><summary>أنهي باقة أوفر؟</summary><p>باقة الـ 3 شهور بـ 999 جنيه، بدل 1197 لو دفعت كل شهر لوحده، يعني بتوفر 198 جنيه.</p></details>
+    <details class="reveal"><summary>فيه لوكرز أحط فيها حاجتي؟</summary><p>أيوه، فيه منطقة لوكرز وأحواض علشان تتمرن وإنت مرتاح.</p></details>
+  </div>
+</div></section>
+
+<section style="padding-top:20px"><div class="wrap">
+  <div class="final reveal">
+    <h3>متأجلش تاني… <span class="gold">ابدأ النهارده</span></h3>
+    <p>3 شهور بـ 999 جنيه بس، في جيم جديد بالكامل.</p>
+    <a href="#location" class="btn btn-gold">اعرف المكان واشترك</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="brand" style="margin-bottom:.4rem"><b>X</b> GYM</div>
+  مصنع الأبطال • قاعة القاضي، على البحر – اتجاه مسطرد<br>© <span id="yr"></span> X GYM
+</div></footer>
+
+<a href="#prices" class="btn btn-gold float">اشترك بـ 999</a>
+<div class="lb" id="lb"><img alt=""></div>
+
+<script>
+/* ===== بيانات التواصل: املاها وارفع الملف تاني ===== */
+const CONTACT = {
+  facebook: "",   // لينك صفحة الفيسبوك
+  messenger: "",  // مثال: https://m.me/اسم_الصفحة
+  phone: "",      // مثال: 01000000000
+  mapQuery: "قاعة القاضي مسطرد"
+};
+const q = encodeURIComponent(CONTACT.mapQuery);
+const mapUrl = "https://www.google.com/maps/search/?api=1&query=" + q;
+document.getElementById('mapBtn').href = mapUrl;
+document.getElementById('mapImg').href = mapUrl;
+const show = (id, href) => { const el = document.getElementById(id); el.href = href; el.classList.remove('hide'); };
+if (CONTACT.messenger) show('msgBtn', CONTACT.messenger);
+if (CONTACT.phone) show('callBtn', "tel:" + CONTACT.phone);
+if (CONTACT.facebook) show('fbBtn', CONTACT.facebook);
+document.getElementById('yr').textContent = new Date().getFullYear();
+const nav = document.getElementById('nav');
+addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 40));
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold: .12});
+document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+const lb = document.getElementById('lb');
+document.querySelectorAll('.gal img').forEach(img => img.addEventListener('click', () => { lb.querySelector('img').src = img.src; lb.classList.add('on'); }));
+lb.addEventListener('click', () => lb.classList.remove('on'));
+</script>
+</body>
+</html>
