@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>X GYM | مصنع الأبطال – قاعة القاضي، مسطرد</title>
+<title>X GYM | مصنع الأبطال – قاعة القاضي على البحر</title>
 <meta name="description" content="X GYM – أجهزة جديدة بالكامل، كوتشات على أعلى مستوى، نظام متكامل للمبتدئين. شغالين طول اليوم. قاعة القاضي على البحر اتجاه مسطرد.">
 <meta property="og:title" content="X GYM | مصنع الأبطال">
 <meta property="og:description" content="أجهزة جديدة بالكامل • كوتشات على أعلى مستوى • 3 شهور بـ 999 جنيه">
@@ -146,7 +146,6 @@ footer{border-top:1px solid var(--line);padding:2rem 0;color:var(--mut);font-siz
 <header class="hero">
   <video autoplay muted loop playsinline poster="img/sign.jpg"><source src="img/hero.mp4" type="video/mp4"></video>
   <div class="wrap hero-c">
-    <span class="tag">جيم جديد في مسطرد</span>
     <h1><span>X</span> GYM</h1>
     <h2>مصنع <span class="gold">الأبطال</span></h2>
     <p>أجهزة جديدة بالكامل، وكوتشات على أعلى مستوى، ونظام متكامل للمبتدئين. شغالين طول اليوم عشان تتمرن في الوقت اللي يناسبك.</p>
@@ -240,7 +239,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0;color:var(--mut);font-siz
       <a id="mapBtn" class="btn btn-gold" target="_blank" rel="noopener">افتح الموقع على الخريطة</a>
       <a id="msgBtn" class="btn btn-ghost hide" target="_blank" rel="noopener">ابعتلنا رسالة</a>
       <a id="callBtn" class="btn btn-ghost hide">اتصل بينا</a>
-      <a id="fbBtn" class="btn btn-ghost hide" target="_blank" rel="noopener">صفحتنا على فيسبوك</a>
+      <a id="fbBtn" class="btn btn-ghost hide" target="_blank" rel="noopener">ابعتلنا رسالة على فيسبوك</a>
     </div>
     <a id="mapImg" class="reveal" target="_blank" rel="noopener" style="position:relative;display:block;border-radius:22px;overflow:hidden;border:1px solid var(--line);min-height:340px"><img src="img/entrance.jpg" alt="مدخل X GYM" loading="lazy" style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;filter:brightness(.6)"><span style="position:absolute;inset:auto 0 0 0;padding:1.4rem;background:linear-gradient(0deg,rgba(0,0,0,.85),transparent);font-weight:800;font-size:1.1rem">📍 دوس هنا وافتح الموقع على جوجل ماب</span></a>
   </div>
@@ -261,7 +260,10 @@ footer{border-top:1px solid var(--line);padding:2rem 0;color:var(--mut);font-siz
   <div class="final reveal">
     <h3>متأجلش تاني… <span class="gold">ابدأ النهارده</span></h3>
     <p>3 شهور بـ 999 جنيه بس، في جيم جديد بالكامل.</p>
-    <a href="#location" class="btn btn-gold">اعرف المكان واشترك</a>
+    <div style="display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap">
+      <a href="#location" class="btn btn-gold">اعرف المكان واشترك</a>
+      <a href="https://www.facebook.com/share/1E4r64QSAc/" target="_blank" rel="noopener" class="btn btn-ghost">ابعتلنا رسالة على فيسبوك</a>
+    </div>
   </div>
 </div></section>
 
@@ -276,10 +278,10 @@ footer{border-top:1px solid var(--line);padding:2rem 0;color:var(--mut);font-siz
 <script>
 /* ===== بيانات التواصل: املاها وارفع الملف تاني ===== */
 const CONTACT = {
-  facebook: "",   // لينك صفحة الفيسبوك
+  facebook: "https://www.facebook.com/share/1E4r64QSAc/",   // لينك صفحة الفيسبوك
   messenger: "",  // مثال: https://m.me/اسم_الصفحة
   phone: "",      // مثال: 01000000000
-  mapQuery: "قاعة القاضي مسطرد"
+  mapQuery: "قاعة القاضي على البحر"
 };
 const q = encodeURIComponent(CONTACT.mapQuery);
 const mapUrl = "https://www.google.com/maps/search/?api=1&query=" + q;
